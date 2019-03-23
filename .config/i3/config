@@ -6,7 +6,7 @@ new_float pixel 3
 
 # gaps
 gaps inner 5
-gaps outer 1
+gaps outer 4
 
 # general configuration
 set $mod Mod4
@@ -18,13 +18,13 @@ bindsym $mod+Shift+minus gaps outer all minus 5
 bindsym $mod+Shift+plus  gaps outer all plus  5
 
 # start a terminal
-bindsym $mod+Return exec alacritty
+bindsym $mod+Return exec alacritty -e "tmux"
 
 # kill focused window
 bindsym $mod+Shift+q kill
 
 # start rofi (a program launcher)
-bindsym $mod+d exec rofi -show run -eh 1
+bindsym $mod+d exec rofi -show run -config ~/.config/rofi/theme.rasi
 
 # change focus
 bindsym $mod+h focus left
@@ -103,7 +103,6 @@ bindsym $mod+Shift+8 move container to workspace $ws8
 # assign floating properties
 for_window [class="Pavucontrol"] floating enable
 for_window [class="Gparted"] floating enable
-for_window [class="Lxappearance"] floating enable
 
 # volume & media key bindings
 bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5%
@@ -159,4 +158,8 @@ bindsym $mod+r mode "resize"
 
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 exec --no-startup-id dropbox
-exec --no-startup-id owncloud
+exec --no-startup-id nextcloud
+exec compton --config $HOME/.config/compton.conf -b 
+
+# Bind caps lock to escape because it's glorious
+exec xmodmap -e 'clear Lock' -e 'keycode 0x42 = Escape'
