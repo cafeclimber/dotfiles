@@ -1,0 +1,10 @@
+i3-wm.bar.position: top
+i3-wm.gaps.inner.size: 15
+i3-wm.gaps.outer.size: 10
+i3-wm.gaps.smart: off
+i3-wm.window.border.size: 0
+i3-wm.floatingwindow.border.size: 0
+
+regolith.look.path: /usr/share/regolith-look/default
+regolith.wallpaper.file: /home/gaylybailey/.config/regolith2/wallpaper.jpg
+regolith.wallpaper.options: stretched
