@@ -15,6 +15,7 @@
   kitty.enable = true;
   nvim.enable = true;
   oh-my-posh.enable = true;
+  steam.enable = true;
 
   home.sessionVariables = {
     # EDITOR = "emacs";

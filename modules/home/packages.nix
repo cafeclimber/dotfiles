@@ -4,9 +4,9 @@
     app2unit
     firefox
     gh
+    gparted
     ripgrep
     nerd-fonts.blex-mono
     nerd-fonts.departure-mono
   ];
-
 }

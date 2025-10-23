@@ -8,6 +8,7 @@
     ./oh-my-posh.nix
     ./packages.nix
     ./settings.nix
+    ./steam.nix
     ./zsh.nix
   ];  
 

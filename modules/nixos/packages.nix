@@ -5,4 +5,6 @@
     upower
   ];
 
+  security.polkit.enable = true;
+
 }
